@@ -1,0 +1,4 @@
+https://learn.sparkfun.com/tutorials/python-programming-tutorial-getting-started-with-the-raspberry-pi/configure-your-pi
+
+https://learn.adafruit.com/circuitpython-on-raspberrypi-linux/installing-circuitpython-on-raspberry-pi
+https://learn.adafruit.com/circuitpython-on-raspberrypi-linux?view=all

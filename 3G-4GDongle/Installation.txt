@@ -1,0 +1,42 @@
+https://www.youtube.com/watch?v=C92Wygv5p0w
+https://www.youtube.com/watch?v=M0D1-_3XRWE
+
+pi@raspberrypi:~ $ wget "http://raspberry-at-home.com/files/sakis3g.tar.gz"
+--2018-10-30 19:05:09--  http://raspberry-at-home.com/files/sakis3g.tar.gz
+Resolving raspberry-at-home.com (raspberry-at-home.com)... 188.128.240.93
+Connecting to raspberry-at-home.com (raspberry-at-home.com)|188.128.240.93|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 200713 (196K) [application/octet-stream]
+Saving to: ‘sakis3g.tar.gz’
+
+sakis3g.tar.gz      100%[===================>] 196.01K   103KB/s    in 1.9s    
+
+2018-10-30 19:05:11 (103 KB/s) - ‘sakis3g.tar.gz’ saved [200713/200713]
+
+pi@raspberrypi:~ $ ls
+2018-10-24-091005_1366x768_scrot.png  Downloads  python_games
+2018-10-26-193816_1280x720_scrot.png  MagPi      rpi-lora-tranceiver-master
+2018-10-27-112432_1280x720_scrot.png  master     sakis3g.tar.gz
+atlas-scientific                      Music      Templates
+Desktop                               Pictures   Videos
+Documents                             Public
+pi@raspberrypi:~ $ sudo mkdir /usr/bin/modem3g
+pi@raspberrypi:~ $ sudo chmod 777 /usr/bin/modem3g
+pi@raspberrypi:~ $ sudo cp sakis3g.tar.gz /usr/bin/modem3g
+pi@raspberrypi:~ $ cd /usr/bin/modem3g/
+pi@raspberrypi:/usr/bin/modem3g $ ls
+sakis3g.tar.gz
+pi@raspberrypi:/usr/bin/modem3g $ sudo tar -zxvf sakis3g.tar.gz
+sakis3g
+pi@raspberrypi:/usr/bin/modem3g $ sudo chmod +x sakis3g
+pi@raspberrypi:/usr/bin/modem3g $ ls
+sakis3g  sakis3g.tar.gz
+pi@raspberrypi:/usr/bin/modem3g $ sudo nano /etc/sakis3g.conf
+Type The Following & Save
+APN="zongwap"
+APN_USER=""
+APN_PASS=""
+
+
+
+pi@raspberrypi:/usr/bin/modem3g $ sudo ./sakis3g connect info

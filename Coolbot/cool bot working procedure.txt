@@ -1,0 +1,14 @@
+How does it do this?
+
+The HEATER cable (red tip) is keeping your A/C’s sensor warm to make the A/C “think” it is warmer than the actual
+room temperature. By doing this, the compressor on your A/C keeps running and cools down the space.
+The ROOM and the FIN sensors tell the HEATER when to stop running. When the HEATER turns off, the A/C’s sensor
+cools down and shuts off the compressor in response.
+
+If the room temperature reaches the set value, the HEATER will stop running. Your A/C’s Temperature sensor will cool
+down and shut the compressor off. 
+
+If the fins of your A/C are reaching the freezing set point (33°F factory default), the HEATER will stop running. Your
+A/C’s Temperature sensor will cool down and shut the compressor off to allow for a defrost cycle. This is normal even
+if the room has not reached its set point.
+
