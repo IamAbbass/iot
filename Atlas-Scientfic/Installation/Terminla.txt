@@ -1,0 +1,3 @@
+--Atlas Scientific--
+pi@raspberrypi:~ $ cd IOT/atlas-scientific
+pi@raspberrypi:~/IOT/atlas-scientific $ python custom.py
